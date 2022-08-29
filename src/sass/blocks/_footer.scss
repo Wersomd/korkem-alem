@@ -1,0 +1,123 @@
+.footer {
+  padding: 60px 0 48px 0;
+
+  &__items {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  &__address {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+
+    &-title {
+      font-size: 36px;
+      font-weight: bold;
+      margin-bottom: 40px;
+    }
+
+    .mb-24 {
+      margin-bottom: 24px;
+    }
+
+    &-address {
+      position: relative;
+      padding-left: 40px;
+      font-size: 18px;
+      font-weight: bold;
+
+      &::before {
+        content: "";
+        position: absolute;
+        background: url("../img/footer/location.svg") center center/cover
+          no-repeat;
+        top: 0;
+        left: 0;
+        width: 25px;
+        height: 25px;
+      }
+
+      &:last-child {
+        margin-top: 24px;
+        &::before {
+          background: url("../img/footer/phone.svg") center center/cover
+            no-repeat;
+        }
+      }
+    }
+
+    &-name,
+    &-phone {
+      margin-top: 8px;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 160%;
+    }
+  }
+
+  &__links {
+    text-align: left;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    column-gap: 35px;
+
+    .first__menu {
+      width: 192px;
+    }
+
+    .second__menu {
+      width: 192px;
+    }
+
+    .last__menu {
+      width: 160px;
+    }
+  }
+
+  &__menu {
+    text-align: left;
+    &-title {
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 32px;
+    }
+
+    &-link {
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+
+      a {
+        margin-bottom: 20px;
+        color: #1c1c1c;
+        opacity: 0.9;
+      }
+    }
+  }
+
+  &__bottom {
+    margin-top: 66px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__social {
+    &-link {
+      margin-left: 12px;
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+
+    i {
+      font-style: normal;
+      font-size: 24px;
+      color: #757373;
+    }
+  }
+}

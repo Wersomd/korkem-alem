@@ -1,0 +1,42 @@
+@import 'base/variables';
+
+.location {
+    &__items {
+        margin-top: 40px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 128px;        
+    }
+
+    &__map {
+        width: 649px;
+        height: 649px;
+    }
+
+    &__address__block {
+        margin-left: 124px;
+    }
+
+    &__number {
+        display: inline-block;
+        color: #fff;
+        border-radius: 12px;
+        padding: 10px 16px;
+        background-color: $green-color;
+        font-size: 28px;
+        font-weight: 700;
+    }
+
+    &__address {
+        width: 500px;
+        font-size: 20px;
+        line-height: 26px;
+        margin-top: 30px;
+    }
+}

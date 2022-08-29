@@ -1,0 +1,31 @@
+@import '../base/variables';
+
+.page__title-block {
+    padding-top: 150px;
+    text-align: center;
+}
+
+.page__title {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.page__subtitle {
+    display: inline-block;
+    padding: 5px 20px;
+    border: 1px solid $green-color;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 16px;
+    color: $black-color;
+}
+
+.red__text {
+    color: $red-color;
+}
+
+.green__text {
+    color: $green-color;
+}

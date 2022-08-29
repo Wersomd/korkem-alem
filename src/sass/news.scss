@@ -1,0 +1,142 @@
+@import "base/variables";
+
+.news {
+  &__hashtag {
+    padding: 49px 0 402px 46px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 16px;
+  }
+
+  .today__news {
+    color: $white-color;
+    background: url("../img/news/news-bg.png") center center/cover no-repeat;
+    margin-top: 67px;
+    &-text {
+      padding-left: 46px;
+      padding-bottom: 45px;
+    }
+
+    &-title {
+      display: inline-block;
+      padding: 12px 10px;
+      background-color: #007947;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 16px;
+      border-radius: 10px;
+    }
+
+    &-desc {
+      margin-top: 10px;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 25px;
+      padding-right: 170px;
+    }
+  }
+
+  .pb-0 {
+    padding-bottom: 0;
+    padding-left: 0;
+  }
+
+  .clb {
+    color: #000;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 118px;
+  }
+
+  &__items {
+    margin-top: 32px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    width: 360px;
+    margin-bottom: 70px;
+
+    &:nth-child(even) {
+      margin-left: 62px;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__info {
+    margin-top: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__title {
+    font-size: 24px;
+    line-height: 26px;
+  }
+
+  &__date {
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  &__desc {
+    margin-top: 25px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  &__sidebar {
+    margin-left: 136px;
+
+    &__items {
+      margin-top: 32px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    &__item {
+      width: 333px;
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 100px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      &-img {
+        width: 120px;
+        height: 88px;
+        
+        img {
+          max-width: unset;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+
+      &-text {
+        margin-left: 24px;
+      }
+
+      &-title {
+        font-size: 16px;
+        line-height: 18px;
+        font-weight: 700;
+      }
+
+      &-date {
+        margin-top: 18px;
+      }
+    }
+  }
+}
