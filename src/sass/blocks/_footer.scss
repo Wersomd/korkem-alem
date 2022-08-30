@@ -108,16 +108,35 @@
   &__social {
     &-link {
       margin-left: 12px;
-
+      
       &:first-child {
         margin-left: 0;
       }
     }
-
+    
     i {
       font-style: normal;
       font-size: 24px;
       color: #757373;
+      transition: all .3s ease-in;
+    }
+
+    .fa-facebook {
+      &:hover {
+        color: 	#4267B2;
+      }
+    }
+
+    .fa-instagram {
+      &:hover {
+        color: #bc2a8d;
+      }
+    }
+
+    .fa-telegram {
+      &:hover {
+        color: #0088cc;
+      }
     }
   }
 }

@@ -1,6 +1,14 @@
+.header {
+  .nav {
+    &__link {
+      color: #fff;
+    }
+  }
+}
+
 .promo {
     position: relative;
-    background: url("../img/hero/promo-bg.png") bottom center/cover no-repeat;
+    background: url("../img/hero/promo-bg.png") center top/cover no-repeat;
     padding-top: 230px;
     height: 100vh;
   
@@ -14,7 +22,15 @@
     &__text {
       text-align: center;
       font-size: 32px;
-      color: #000;
+    }
+
+    &__subtitle {
+      color: #fff;
+    }
+
+    &__arrow {
+      display: block;
+      margin: 30px auto 0 auto;
     }
   }
   

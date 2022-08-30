@@ -1,4 +1,130 @@
-@import 'base/variables';
+@import "base/variables";
 
+.faq {
+  &__container {
+    margin: 50px 0 40px 0;
+    &-title {
+      font-size: 28px;
+      font-weight: 700;
+    }
+  }
 
+  &-accordion {
+    margin-top: 60px;
+    &__item {
+      border-bottom: 1px solid $black-color;
 
+      button[aria-expanded="true"] {
+        border-bottom: 1px solid $black-color;
+      }
+
+      button {
+        position: relative;
+        display: block;
+        text-align: left;
+        width: 100%;
+        padding: 16px 0 14px 0;
+        color: #000;
+        font-size: 18.4px;
+        font-weight: 400;
+        border: none;
+        background: none;
+        outline: none;
+        color: green;
+
+        &:hover,
+        &:focus {
+          cursor: pointer;
+
+          &::after {
+            cursor: pointer;
+            color: $black-color;
+            border: 1px solid $black-color;
+          }
+        }
+      }
+    }
+
+    &__title {
+      padding: 16px 24px 16px 0;
+      color: $black-color;
+      font-weight: 600;
+    }
+
+    .icon {
+      display: inline-block;
+      position: absolute;
+      top: 18px;
+      right: 0;
+      width: 24px;
+      height: 24px;
+      border: 1px solid;
+      border-radius: 22px;
+
+      &::before {
+        display: block;
+        position: absolute;
+        content: "";
+        top: 12px;
+        left: 3px;
+        width: 8px;
+        height: 2px;
+        transform: rotate(45deg);
+        background: currentColor;
+      }
+
+      &::after {
+        display: block;
+        position: absolute;
+        content: "";
+        top: 4px;
+        left: 11px;
+        width: 2px;
+        height: 12px;
+        transform: rotate(30deg);
+        background: currentColor;
+      }
+    }
+
+    button[aria-expanded="true"] {
+      color: red;
+
+      .icon {
+        &::before {
+          transform: rotate(45deg);
+          width: 12px;
+          top: 10px;
+          left: 5px;
+        }
+        &::after {
+          transform: rotate(45deg);
+          top: 5px;
+          left: 10px;
+        }
+      }
+
+      + .faq-accordion__content {
+        opacity: 1;
+        max-height: 9em;
+        transition: all 200ms linear;
+        will-change: opacity, max-height;
+      }
+    }
+
+    &__content {
+      opacity: 0;
+      max-height: 0;
+      overflow: hidden;
+      transition: opacity 200ms linear, max-height 200ms linear;
+      will-change: opacity, max-height;
+
+      p {
+        font-size: 16px;
+        font-weight: 300;
+        margin: 2em 0;
+        color: #757373;
+        line-height: calc(16px * 2);
+      }
+    }
+  }
+}
