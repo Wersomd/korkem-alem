@@ -15,7 +15,7 @@
     &__title {
       color: #fff;
       font-weight: bold;
-      font-size: 80px;
+      font-size: 100px;
       margin-bottom: 20px;
     }
   
@@ -84,7 +84,7 @@
       margin-bottom: 100px;
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      justify-content: space-around;
   
       &:nth-child(2) {
         flex-direction: row-reverse;
