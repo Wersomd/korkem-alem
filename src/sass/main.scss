@@ -1,4 +1,4 @@
-@import 'base/variables';
+@import "base/variables";
 
 * {
   margin: 0;
@@ -6,8 +6,10 @@
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   height: 100%;
+  font-family: 'Manrope', sans-serif;
 }
 
 ul,
@@ -45,8 +47,8 @@ img {
   padding: 0 15px;
 }
 
-@import 'blocks/header';
+@import "blocks/header";
 
-@import 'blocks/title';
+@import "blocks/title";
 
-@import 'blocks/footer';
+@import "blocks/footer";
