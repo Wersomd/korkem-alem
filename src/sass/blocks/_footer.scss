@@ -1,3 +1,4 @@
+
 .footer {
   padding: 60px 0 48px 0;
 
@@ -19,7 +20,7 @@
     }
 
     .mb-24 {
-      margin-bottom: 24px;
+      margin-bottom: 30px;
     }
 
     &-address {
@@ -54,6 +55,16 @@
       font-size: 18px;
       font-weight: 400;
       line-height: 160%;
+
+      a {
+        color: $black-color;
+      }
+    }
+
+    &-phone {
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
     }
   }
 
@@ -103,6 +114,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    .copyright {
+      color: #464646;
+    }
   }
 
   &__social {

@@ -1,3 +1,5 @@
+@import 'base/variables';
+
 .header {
   .nav {
     &__link {
@@ -42,22 +44,26 @@
       align-items: stretch;
       justify-content: center;
     }
+
+    &__video {
+      max-width: 450px;
+
+      img {
+        height: 100%;
+        object-fit: cover;
+      }
+    }
   
     &__text {
-      max-width: 527px;
+      max-width: 450px;
       margin-left: 30px;
-    }
-  
-    &__title {
-      line-height: 1.1;
-      font-weight: bold;
-      font-size: 26px;
-      margin-bottom: 20px;
-    }
-  
-    &__desc {
-      font-size: 20px;
-      line-height: 28px;
+      font-size: 17px;
+      line-height: 1.4;
+
+      .green-text {
+        color: $green-color;
+        font-weight: 700;
+      }
     }
   }
   
@@ -68,12 +74,16 @@
       text-align: center;
       font-size: 36px;
       font-weight: bold;
-      margin-bottom: 40px;
+      margin-bottom: 30px;
     }
   
     &__subtitle {
+      margin: 0 auto;
+      max-width: 500px;
       text-align: center;
       font-size: 18px;
+      line-height: 1.4;
+      color: #464646;
     }
   
     &__items {
@@ -96,7 +106,7 @@
     }
   
     &__text {
-      max-width: 424px;
+      max-width: 400px;
       &-title {
         font-size: 36px;
         font-weight: bold;
@@ -112,51 +122,11 @@
     &__link {
       color: #007947;
       font-size: 16px;
-      line-height: 18px;
       cursor: pointer;
-      height: 18px;
-      line-height: 16px;
+      padding: 8px 24px;
+      border: 1px solid $green-color;
+      border-radius: 5px;
       display: inline-block;
-  
-      &-icon {
-        position: relative;
-        top: -1px;
-        transition: transform 0.3s ease;
-        vertical-align: middle;
-      }
-  
-      &-circle {
-        transition: stroke-dashoffset 0.3s ease;
-        stroke-dasharray: 95;
-        stroke-dashoffset: 95;
-      }
-  
-      &:hover &-icon {
-        transform: translate3d(5px, 0, 0);
-      }
-  
-      &:hover &-circle {
-        stroke-dashoffset: 0;
-      }
-    }
-  
-    .company {
-      margin-top: 270px;
-      &__info {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-      }
-  
-      &__text {
-        max-width: 670px;
-        font-size: 18px;
-        line-height: 28.8px;
-      }
-  
-      &__name {
-        font-weight: bold;
-      }
     }
   }
   
