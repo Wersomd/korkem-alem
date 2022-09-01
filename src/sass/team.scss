@@ -1,5 +1,7 @@
+@import "base/variables";
+
 .team {
-  padding-bottom: 40px;
+  padding-bottom: 140px;
   text-align: center;
 
   &__swiper {
@@ -14,6 +16,58 @@
   &__item {
     img {
       height: 100%;
+    }
+  }
+
+  &__cta {
+    padding-top: 120px;
+
+    &__wrapper {
+      background-color: $green-color;
+    }
+
+    &__container {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 60px 0;
+    }
+
+    &__right-block {
+      max-width: 650px;
+    }
+
+    &__text {
+      color: #fff;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 1.4;
+    }
+
+    &__btn {
+      display: inline-block;
+      margin-top: 20px;
+      color: #fff;
+      padding: 6px 24px;
+      border: 2px solid #fff;
+      border-radius: 5px;
+    }
+
+    &__left-block {
+      position: relative;
+    }
+
+    &__img {
+      position: absolute;
+      top: -250px;
+      right: 0;
+      width: 500px;
+      height: 365px;
+      &-img {
+       height: 100%;
+       object-fit: cover;
+      }
     }
   }
 }

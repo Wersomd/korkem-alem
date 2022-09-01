@@ -1,44 +1,49 @@
-@import 'base/variables';
+@import "base/variables";
 
 .header {
-    overflow: hidden;
-    padding-top: 30px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 100;
+  overflow: hidden;
+  padding-top: 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  column-gap: 80px;
+
+  &__list {
+    display: flex;
+    column-gap: 30px;
+    font-size: 17px;
+    font-weight: 500;
   }
-  
-  .nav {
+
+  &__link {
+    color: $black-color;
+    font-size: 16px;
+    font-weight: normal;
+  }
+
+  &__buttons {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    column-gap: 80px;
-  
-    &__list {
-      display: flex;
-      column-gap: 30px;
-      font-size: 17px;
-      font-weight: 500;
-    }
-  
-    &__link {
-      color: $black-color;
-    }
-  
-    &__buttons {
-      display: flex;
-      align-items: center;
-      column-gap: 25px;
-      font-size: 17px;
-      font-weight: 500;
-    }
-  
-    &__btn {
-      padding: 8px 24px;
-      border: 1px solid $green-color;
-      border-radius: 4px;
-      text-transform: capitalize;
-    }
+    column-gap: 25px;
+    font-size: 17px;
+    font-weight: 500;
   }
+
+  &__btn {
+    padding: 6px 24px;
+    border: 1px solid $green-color;
+    border-radius: 4px;
+    text-transform: capitalize;
+    color: $black-color;
+    font-size: 16px;
+    font-weight: normal;
+  }
+}
