@@ -27,8 +27,8 @@
   }
 
   &__img {
-    height: 289px;
-    margin-top: -38px;
+    height: 287px;
+    margin-top: -37px;
     &-img {
       max-width: 100%;
       height: 100%;
@@ -89,8 +89,8 @@
   .acceptanceOfLivestock {
     display: flex;
     align-items: flex-start;
-    justify-content: space-around;
-    margin-top: 200px;
+    margin-top: 160px;
+    padding-top: 100px;
 
     &__title {
       font-size: 24px;
@@ -116,6 +116,7 @@
 
     &__right__block {
       position: relative;
+      margin-left: 100px;
     }
     &__img {
       img {
@@ -144,62 +145,64 @@
     align-items: center;
 
     &__left__text {
-        font-size: 20px;
-        font-weight: 700;
-        line-height: 1.2;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 1.2;
     }
 
     &__right__text {
-        font-size: 18px;
-        line-height: calc(18px * 2);
+      font-size: 18px;
+      line-height: calc(18px * 2);
     }
   }
 
-  &__contact__container {
-    background-color: $green-color;
-    margin-top: 100px;
-  }
+  &__cta {
+    &__wrapper {
+      background-color: $green-color;
+      margin-top: 100px;
+    }
 
-  &__contact {
-    padding: 70px 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    color: #fff;
-
+    &__container {
+      padding: 70px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: #fff;
+    }
     &-text {
-        font-size: 17px;
-        line-height: 1.2;
+      font-size: 17px;
+      line-height: 1.2;
     }
 
     &-info {
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+      padding-right: 120px;
+
+      a {
         display: flex;
-        align-items: flex-start;
-        flex-direction: column;
+        align-items: center;
+        color: #fff;
+      }
 
-        a {
-            display: flex;
-            align-items: center;
-            color: #fff;
-        }
+      span {
+        margin-left: 7px;
+        font-size: 20px;
+        font-weight: bold;
+      }
 
-        span {
-            margin-left: 7px;
-            font-size: 20px;
-            font-weight: bold;
-        }
-
-        i {
-            color: #fff;
-            font-style: normal;
-            font-size: 24px;
-        }
+      i {
+        color: #fff;
+        font-style: normal;
+        font-size: 24px;
+      }
     }
 
     &-phone {
-        margin-top: 10px;
-        font-size: 20px;
-        font-weight: bold;
+      margin-top: 10px;
+      font-size: 20px;
+      font-weight: bold;
     }
   }
 }
