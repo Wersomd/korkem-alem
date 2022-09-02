@@ -99,6 +99,11 @@
         margin-bottom: 20px;
         color: #1c1c1c;
         opacity: 0.9;
+        transition: all .3s ease-in;
+
+        &:hover {
+          color: #000;
+        }
       }
     }
   }
