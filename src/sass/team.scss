@@ -4,13 +4,35 @@
   padding-bottom: 140px;
   text-align: center;
 
+  &__top__text {
+    font-size: 18px;
+    line-height: 1.5;
+    max-width: 900px;
+    margin: 70px auto 0 auto;
+    color: $black-color;
+  }
+
   &__swiper {
     margin-top: 60px;
   }
 
   .swiper {
+
+    &-wrapper {
+      height: 400px !important;
+    }
+
     &-slide {
-      height: 336px !important;
+      height: 340px !important;
+    }
+
+    &-scrollbar {
+      background: transparent;
+    }
+
+    &-scrollbar-drag {
+      background: #464646;
+      height: 2px;
     }
   }
   &__item {

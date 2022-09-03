@@ -61,10 +61,11 @@
   }
 
   &__text {
-    max-width: 450px;
+    max-width: 480px;
     margin-left: 30px;
     font-size: 17px;
-    line-height: 1.4;
+    line-height: 1.6;
+    font-weight: 500;
 
     .green-text {
       color: $green-color;
@@ -79,7 +80,7 @@
   &__title {
     text-align: center;
     font-size: 36px;
-    font-weight: bold;
+    font-weight: 700;
     margin-bottom: 30px;
   }
 
@@ -125,7 +126,7 @@
     max-width: 400px;
     &-title {
       font-size: 36px;
-      font-weight: bold;
+      font-weight: 800;
     }
 
     &-desc {
@@ -154,7 +155,15 @@
     height: 100%;
 
     &-wrapper {
-      height: 460px !important;
+      height: 435px !important;
+    }
+
+    &-top-slider {
+      padding-top: 40px;
+    }
+
+    &-bottom-slider {
+      padding-bottom: 20px;
     }
 
     &-slide {
@@ -172,11 +181,41 @@
     }
 
     &-scrollbar {
-      background: #e8e6e6;
+      background: transparent;
     }
 
     &-scrollbar-drag {
       background: #464646;
+      height: 2px;
+    }
+
+    &-top-scrollbar {
+      top: 0;
+      bottom: 0;
+      left: 0;
     }
   }
+}
+
+@media (max-width: 1300px) {
+  .second-container {
+    max-width: 1140px;
+  }
+
+  .header {
+
+    .nav {
+      &__list {
+        margin-left: 0;
+      }
+
+      &__link {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1070px) {
+  
 }

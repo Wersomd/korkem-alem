@@ -56,32 +56,28 @@
       position: absolute;
       top: 18px;
       right: 0;
-      width: 24px;
-      height: 24px;
+      width: 22px;
+      height: 22px;
       border: 1px solid;
       border-radius: 22px;
-
       &::before {
         display: block;
         position: absolute;
         content: "";
-        top: 12px;
-        left: 3px;
-        width: 8px;
+        top: 9px;
+        left: 5px;
+        width: 10px;
         height: 2px;
-        transform: rotate(45deg);
         background: currentColor;
       }
-
       &::after {
         display: block;
         position: absolute;
         content: "";
-        top: 4px;
-        left: 11px;
+        top: 5px;
+        left: 9px;
         width: 2px;
-        height: 12px;
-        transform: rotate(30deg);
+        height: 10px;
         background: currentColor;
       }
     }
@@ -90,19 +86,10 @@
       color: red;
 
       .icon {
-        &::before {
-          transform: rotate(45deg);
-          width: 12px;
-          top: 10px;
-          left: 5px;
-        }
         &::after {
-          transform: rotate(45deg);
-          top: 5px;
-          left: 10px;
+          width: 0;
         }
       }
-
       + .faq-accordion__content {
         opacity: 1;
         max-height: 9em;
