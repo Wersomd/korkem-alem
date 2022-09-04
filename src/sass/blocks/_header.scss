@@ -1,7 +1,6 @@
 @import "base/variables";
 
 .header {
-  overflow: hidden;
   padding-top: 30px;
   position: absolute;
   top: 0;
@@ -21,21 +20,12 @@
     column-gap: 30px;
     font-size: 17px;
     font-weight: 500;
-    margin-left: 150px;
   }
 
   &__link {
     color: $black-color;
     font-size: 16px;
     font-weight: normal;
-  }
-
-  &__buttons {
-    display: flex;
-    align-items: center;
-    column-gap: 25px;
-    font-size: 17px;
-    font-weight: 500;
   }
 
   &__btn {
@@ -46,5 +36,123 @@
     color: $black-color;
     font-size: 16px;
     font-weight: normal;
+  }
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.switch-lang {
+  &-wrapper {
+    position: relative;
+    user-select: none;
+    width: 40px;
+    margin-right: 25px;
+  }
+
+  &-container {
+    position: relative;
+    display: flex;
+    align-items: baseline;
+    flex-direction: column;
+  }
+
+  &-trigger {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+
+  &-arrow {
+    position: relative;
+    height: 15px;
+    width: 15px;
+
+    &::after {
+      content: "";
+      background: url("../img/hero/openlanglistgreenicon.svg");
+      background-size: contain !important;
+      background-repeat: no-repeat !important;
+      position: absolute;
+      height: 100%;
+      width: 10px;
+      right: -10px;
+      top: 2px;
+      transition: all 0.4s;
+    }
+  }
+
+  &-options {
+    position: absolute;
+    display: block;
+    top: 210%;
+    left: 0;
+    right: 0;
+    box-shadow: 0px 8px 16px rgb(0 0 0 / 8%);
+    background: #fff;
+    transition: all 0.5s;
+    width: 60px;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    z-index: 2;
+    border: 1px solid #000;
+  }
+
+  &-option {
+    position: relative;
+    display: block;
+    height: 40px;
+    cursor: pointer;
+    transition: all 0.5s;
+    padding: 13px 17px;
+    border-bottom: 1px solid $green-color;
+  }
+
+  &-option.selected {
+    color: #fff;
+    background-color: #fff;
+  }
+
+  .open &-arrow::after,
+  .nav.active .open &-arrow::after {
+    background: url("../img/hero/closelanglistgreenicon.svg");
+    transform: rotateX(180deg);
+    top: -8px;
+  }
+
+  &-container.open &-options {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+  }
+}
+
+@media (max-width: 1300px) {
+  .nav {
+    &__link {
+      font-size: 14px;
+    }
+  }
+}
+
+@media (max-width: 1082px) {
+  .nav {
+    &__list {
+      column-gap: 25px;
+    }
+  }
+}
+
+@media (max-width: 1060px) {
+  .nav {
+    justify-content: space-between;
+    &__list {
+      column-gap: 20px;
+    }
   }
 }

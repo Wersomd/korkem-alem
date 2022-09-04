@@ -4,13 +4,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  outline: 2px solid red;
 }
 
 html,
 body {
   height: 100%;
-  font-family: 'Manrope', sans-serif;
+  font-family: "Manrope", sans-serif;
 }
 
 ul,
@@ -39,13 +38,61 @@ img {
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 15px;
 }
 
 .second-container {
   max-width: 1300px;
   margin: 0 auto;
-  padding: 0 15px;
+}
+
+@media screen and (min-width: 1920px) {
+  .container,
+  .second-container {
+    width: 90%;
+    max-width: inherit;
+  }
+}
+
+@media (max-width: 1400px) {
+  .container,
+  .second-container {
+    padding: 0 25px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container,
+  .second-container {
+    max-width: 1140px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container,
+  .second-container {
+    max-width: 960px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container,
+  .second-container {
+    max-width: 720px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container,
+  .second-container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 576px) {
+  .container,
+  .second-container {
+    width: 100%;
+  }
 }
 
 @import "blocks/header";

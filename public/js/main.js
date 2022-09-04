@@ -1,4 +1,27 @@
+// select
+for (const dropdown of document.querySelectorAll(".switch-lang-wrapper")) {
+    dropdown.addEventListener('click', function() {
+        this.querySelector('.switch-lang-container').classList.toggle('open');
+    })
+}
 
+for (const option of document.querySelectorAll(".switch-lang-option")) {
+    option.addEventListener('click', function() {
+        if (!this.classList.contains('selected')) {
+            this.parentNode.querySelector('.switch-lang-option.selected').classList.remove('selected');
+            this.classList.add('selected');
+            this.closest('.switch-lang-container').querySelector('.switch-lang-trigger span').innerHTML = this.innerHTML;
+        }
+    })
+}
+
+window.addEventListener('click', function(e) {
+    for (const select of document.querySelectorAll('.switch-lang-container')) {
+        if (!select.contains(e.target)) {
+            select.classList.remove('open');
+        }
+    }
+});
 
 
 
