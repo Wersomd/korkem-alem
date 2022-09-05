@@ -23,6 +23,24 @@ window.addEventListener('click', function(e) {
     }
 });
 
+const nav = document.querySelector('.nav');
+const navItemActive = document.querySelector(".nav__item.active");
+const body = document.querySelector("body");
+
+(function() {
+    const burgerItem = document.querySelector('.hamburger');
+    const menu = document.querySelector('.nav__links');
+    const menuCloseItem = document.querySelector('.header__menu-close');
+    burgerItem.addEventListener('click', () => {
+        document.body.style.overflow = 'hidden';
+        menu.classList.add('active');
+    });
+    menuCloseItem.addEventListener('click', () => {
+        document.body.style.overflow = 'visible'
+        menu.classList.remove('active');
+    });
+}());
+
 
 
 // FAQ Accordion

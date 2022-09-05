@@ -1,19 +1,19 @@
 @import "base/variables";
 
-.header {
-  .nav {
-    &__link {
-      color: #fff;
-    }
+.nav {
+  &__link {
+    color: #fff;
   }
 }
 
+.header__hamburger-line {
+  background: #fff !important;
+}
+
 .switch-lang {
-
   &-arrow {
-
     &::after {
-      content: '';
+      content: "";
       background: url("../img/hero/openlanglisticon.svg");
     }
   }
@@ -138,7 +138,7 @@
   }
 
   &__text {
-    max-width: 400px;
+    max-width: 35%;
     &-title {
       font-size: 36px;
       font-weight: 800;
