@@ -25,9 +25,10 @@ window.addEventListener('click', function(e) {
 
 const nav = document.querySelector('.nav');
 const navItemActive = document.querySelector(".nav__item.active");
+const firstNavLink = document.querySelector('.firstNavLink');
 const body = document.querySelector("body");
 
-(function() {
+(function menuFunction() {
     const burgerItem = document.querySelector('.hamburger');
     const menu = document.querySelector('.nav__links');
     const menuCloseItem = document.querySelector('.header__menu-close');
@@ -39,8 +40,11 @@ const body = document.querySelector("body");
         document.body.style.overflow = 'visible'
         menu.classList.remove('active');
     });
+    firstNavLink.addEventListener('click', () => {
+        document.body.style.overflow = 'visible'
+        menu.classList.remove('active');
+    });
 }());
-
 
 
 // FAQ Accordion

@@ -11,6 +11,7 @@ const js = require('./task/js.js');
 const img = require('./task/img.js');
 const svg = require('./task/svg');
 const font = require('./task/font.js');
+const withoutCompressionCss = require('./task/withoutCompressionCss.js');
 
 
 const server = () => {
@@ -28,12 +29,13 @@ const watcher = () => {
     watch(path.img.watch, img).on("all", browserSync.reload);
     watch(path.svg.watch, svg).on("all", browserSync.reload)
     watch(path.font.watch, font).on("all", browserSync.reload);
+    watch(path.withoutCompressionCss.watch, withoutCompressionCss).on("all", browserSync.reload);
 
 }
 
 const build = series(
     clear,
-    parallel(html, scss, js, img, svg, font)
+    parallel(html, scss, js, img, svg, font, withoutCompressionCss)
 );
 
 const dev = series(
@@ -49,6 +51,7 @@ exports.img = img;
 exports.svg = svg;
 exports.font = font;
 exports.clear = clear;
+exports.withoutCompressionCss = withoutCompressionCss;
 
 exports.default = app.isProd
     ? build

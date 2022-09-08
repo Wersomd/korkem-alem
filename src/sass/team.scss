@@ -17,7 +17,6 @@
   }
 
   .swiper {
-
     &-wrapper {
       height: 400px !important;
     }
@@ -43,52 +42,46 @@
 
   &__cta {
     padding-top: 120px;
+    color: $white-color;
 
     &__wrapper {
       background-color: $green-color;
     }
 
     &__container {
-      position: relative;
       display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 60px 0;
+      justify-content: space-between;      
     }
 
-    &__right-block {
-      max-width: 650px;
+    &-elements {
+      padding: 70px 0 79px 0;
     }
 
-    &__text {
-      color: #fff;
-      font-size: 20px;
-      font-weight: 500;
-      line-height: 1.4;
+    &-text {
+      font-size: 16px;
+      line-height: 1.2;
+      font-weight: 700;
     }
 
-    &__btn {
+    &-btn {
       display: inline-block;
-      margin-top: 20px;
-      color: #fff;
-      padding: 6px 24px;
-      border: 2px solid #fff;
+      padding: 8px 25px;
+      border: 1px solid $white-color;
       border-radius: 5px;
+      margin-top: 35px;
+      color: $white-color;
     }
 
-    &__left-block {
+    &-img {
       position: relative;
-    }
+      width: 100%;
 
-    &__img {
-      position: absolute;
-      top: -250px;
-      right: 0;
-      width: 500px;
-      height: 365px;
-      &-img {
-       height: 100%;
-       object-fit: cover;
+      img {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        min-height: 100%;
+        object-fit: cover;
       }
     }
   }

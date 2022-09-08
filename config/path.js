@@ -44,5 +44,11 @@ module.exports = {
         src: pathSrc + "/font/*.{eot,ttf,otf,otc,ttc,woff,woff2,svg}",
         watch: pathSrc + "/font/**/*.{eot,ttf,otf,otc,ttc,woff,woff2,svg}",
         dest: pathDest + "/font"
+    },
+
+    withoutCompressionCss: {
+        src: pathSrc + "/css/*.css",
+        watch: pathSrc + "/css/**/*.css",
+        dest: pathDest + "/css"
     }
 }

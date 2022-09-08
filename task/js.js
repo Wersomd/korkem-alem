@@ -11,7 +11,7 @@ const uglify = require("gulp-uglify-es").default;
 
 
 const js = () => {
-    return src(path.js.src, {sourcemaps: app.isDev})
+    return src(["src/js/*.js", "src/js/**/*.js"], {sourcemaps: app.isDev})
         .pipe(plumber({
             errorHandler: notify.onError()
         }))

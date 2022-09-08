@@ -1,7 +1,7 @@
 @import "base/variables";
 
 .nav {
-  &__link {
+  &__link, &__btn{
     color: #fff;
   }
 }
@@ -117,6 +117,7 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
+    flex-wrap: wrap;
 
     &:nth-child(2) {
       flex-direction: row-reverse;
@@ -199,6 +200,22 @@
       top: 0;
       bottom: 0;
       left: 0;
+    }
+  }
+}
+
+@media (max-width: 991.98px) {
+  .about {
+
+    &__text {
+      
+      &-title {
+        font-size: 32px;
+      }
+      
+      &-desc {
+        font-size: 17px;
+      }
     }
   }
 }
