@@ -127,15 +127,6 @@
     }
   }
 
-  &__img {
-    position: relative;
-  }
-
-  &__call {
-    position: absolute;
-    bottom: -100px;
-    right: -60px;
-  }
 
   &__text {
     max-width: 35%;
@@ -208,14 +199,6 @@
       top: 0;
       bottom: 0;
       left: 0;
-    }
-  }
-}
-
-@media (max-width: 1070px) {
-  .about {
-    &__call {
-      right: -18px;
     }
   }
 }

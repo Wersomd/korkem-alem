@@ -1,10 +1,11 @@
 .footer {
   padding: 60px 0 48px 0;
 
-  &__items {
+  &__top {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
 
   &__address {
@@ -152,6 +153,27 @@
 
     .copyright {
       color: #464646;
+    }
+  }
+}
+
+
+@media (max-width: 992px) {
+  .footer {
+
+    &__top {
+      justify-content: center;
+      row-gap: 40px;
+    }
+
+    &__address {
+      flex-direction: row;
+      column-gap: 35px;
+
+      &-address:last-child {
+        margin-top: 0;
+        margin-left: 100px;
+      }
     }
   }
 }

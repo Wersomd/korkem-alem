@@ -63,7 +63,7 @@
 
   &__btn {
     padding: 6px 24px;
-    border: 1px solid $green-color;
+    border: 2px solid $green-color;
     border-radius: 4px;
     text-transform: capitalize;
     color: $black-color;
@@ -149,6 +149,11 @@
     transition: all 0.5s;
     padding: 13px 17px;
     border-bottom: 1px solid $green-color;
+    outline: 1px solid transparent;
+
+    &:hover {
+      background-color: aquamarine;
+    }
   }
 
   &-option.selected {
@@ -173,7 +178,7 @@
 @media (max-width: 1300px) {
   .nav {
     &__link {
-      font-size: 14px;
+      font-size: 13px;
     }
   }
 }
@@ -181,7 +186,7 @@
 @media (max-width: 1100px) {
   .nav {
     &__link {
-      font-size: 13px;
+      font-size: 12px;
     }
   }
 }
