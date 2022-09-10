@@ -38,11 +38,13 @@ img {
 .container {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 10px;
 }
 
 .second-container {
   max-width: 1300px;
   margin: 0 auto;
+  padding: 0 10px;
 }
 
 @media screen and (min-width: 1920px) {
@@ -50,13 +52,6 @@ img {
   .second-container {
     width: 90%;
     max-width: inherit;
-  }
-}
-
-@media (max-width: 1400px) {
-  .container,
-  .second-container {
-    padding: 0 25px;
   }
 }
 

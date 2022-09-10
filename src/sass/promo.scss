@@ -1,8 +1,13 @@
 @import "base/variables";
 
 .nav {
-  &__link, &__btn{
+  &__link,
+  &__btn {
     color: #fff;
+  }
+
+  &__button-mobile {
+    display: none;
   }
 }
 
@@ -128,12 +133,11 @@
     }
   }
 
-
   &__text {
-    max-width: 35%;
+    width: 35%;
     &-title {
       font-size: 36px;
-      font-weight: 800;
+      font-weight: 500;
     }
 
     &-desc {
@@ -204,18 +208,151 @@
   }
 }
 
+
+@media (max-width: 1300px) {
+  .gallery {
+    padding: 70px 0 60px 0;
+
+    .swiper {
+
+      &-slide {
+        height: 100% !important;
+      }
+    }
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .gallery {
+
+    .swiper {
+      &-wrapper {
+        height: 333px !important;
+      }
+    }
+  }
+}
+
 @media (max-width: 991.98px) {
   .about {
-
     &__text {
-      
+      width: 45%;
       &-title {
         font-size: 32px;
       }
-      
+
       &-desc {
         font-size: 17px;
       }
+
+    }
+    &__img {
+      width: 45%;
+    }
+  }
+
+  .process {
+    &__items {
+      flex-wrap: wrap;
+    }
+
+    &__video {
+      width: 100%;
+      max-width: unset;
+    }
+
+    &__text {
+      margin-left: 0;
+      margin-top: 30px;
+      max-width: unset;
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .promo {
+    &__title {
+      font-size: 86px;
+    }
+  }
+
+  .nav {
+    &__button {
+      display: none;
+    }
+
+    &__button-mobile {
+      display: block;
+      margin-top: 30px;
+
+      .nav__btn {
+        color: $black-color;
+        font-size: 20px;
+      }
+    }
+  }
+
+  .about {
+
+    &__img {
+      width: 40%;
+    }
+
+    &__text {
+      margin-left: 25px;
+      width: 50%;
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .about {
+    &__item {
+      flex-direction: column;
+      margin-bottom: 80px;
+    }
+
+    &__img {
+      width: 60%;
+    }
+
+    &__text {
+      text-align: center;
+      margin-left: 0;
+      margin-top: 36px;
+      width: 75%;
+
+      &-title {
+        font-size: 28px;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 577px) {
+  .nav {
+    &__links {
+      width: 100%;
+    }
+  }
+
+  .promo {
+    &__text {
+      padding-top: 40px;
+    }
+    &__title {
+      font-size: 68px;
+    }
+  }
+}
+
+@media (max-width: 483px) {
+  .promo {
+
+    &__title {
+      font-size: 56px;
     }
   }
 }
