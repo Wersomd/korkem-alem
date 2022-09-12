@@ -1,6 +1,7 @@
 @import "base/variables";
 
 .faq {
+  font-family: 'Manrope', sans-serif;
   &__container {
     margin: 50px 0 40px 0;
     &-title {
@@ -23,7 +24,7 @@
         display: block;
         text-align: left;
         width: 100%;
-        padding: 16px 0 14px 0;
+        padding: 12px 0 14px 0;
         color: #000;
         font-size: 18.4px;
         font-weight: 400;
@@ -46,7 +47,8 @@
     }
 
     &__title {
-      padding: 16px 24px 16px 0;
+      display: block;
+      padding: 12px 24px 12px 0;
       color: $black-color;
       font-weight: 600;
     }
@@ -54,7 +56,7 @@
     .icon {
       display: inline-block;
       position: absolute;
-      top: 18px;
+      top: 26px;
       right: 0;
       width: 22px;
       height: 22px;
@@ -92,7 +94,7 @@
       }
       + .faq-accordion__content {
         opacity: 1;
-        max-height: 9em;
+        max-height: fit-content;
         transition: all 200ms linear;
         will-change: opacity, max-height;
       }
@@ -112,6 +114,17 @@
         color: #757373;
         line-height: calc(16px * 2);
       }
+    }
+  }
+}
+
+
+@media (max-width: 767.98px) {
+  .faq {
+
+    &-accordion__title {
+      font-size: 16px;
+      overflow-wrap: break-word;
     }
   }
 }

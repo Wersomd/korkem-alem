@@ -5,5 +5,21 @@ const swiper = new Swiper('.team__swiper', {
 
     scrollbar: {
       el: '.swiper-scrollbar',
+    },
+
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+      },
+      640: {
+        slidesPerView: 2,
+      },
+      768: {
+        spaceBetween: 20,
+        slidesPerView: 3,
+      },
+      1024: {
+        slidesPerView: 4,
+      }
     }
   });

@@ -9,7 +9,7 @@
 html,
 body {
   height: 100%;
-  font-family: "Manrope", sans-serif;
+  font-family: "Manrope", sans-serif !important;
 }
 
 ul,
@@ -25,6 +25,10 @@ img {
   max-width: 100%;
 }
 
+span {
+  font-family: 'Manrope', sans-serif;
+}
+
 .wrapper {
   min-height: 100%;
   display: flex;
@@ -38,13 +42,13 @@ img {
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0 20px;
 }
 
 .second-container {
   max-width: 1300px;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0 20px;
 }
 
 @media screen and (min-width: 1920px) {

@@ -7,7 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Korkem Alem</title>
     <link rel="stylesheet" href="css/reset.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/brands.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/main.min.css">
     <link rel="stylesheet" href="css/header.min.css">
     <link rel="stylesheet" href="css/faq.min.css">
@@ -22,14 +25,15 @@
 
         <main class="main">
 
+            <div class="page__title-block">
+                @@include("blocks/title.html")
+                <div class="page__subtitle">
+                    Тұтынушыларға
+                </div>
+            </div>
+
             <section class="faq" id="faq">
                 <div class="container">
-                    <div class="page__title-block">
-                        @@include("blocks/title.html")
-                        <div class="page__subtitle">
-                            Тұтынушыларға
-                        </div>
-                    </div>
 
                     <div class="faq__container">
                         <div class="faq__container-title">
@@ -102,19 +106,23 @@
                                 </button>
                                 <div class="faq-accordion__content">
                                     <p>
-                                        Әрине. Біздің зауыт, дүкендер толықтай ҚМДБ халал стандартымен жұмыс жасайды. Компаниясыз адалдықты ұран мен аманат етіп алғандықтан, өнімдеріміздің халал стандартына сай болуы - басты қағидамыз!
+                                        Әрине. Біздің зауыт, дүкендер толықтай ҚМДБ халал стандартымен жұмыс жасайды.
+                                        Компаниясыз адалдықты ұран мен аманат етіп алғандықтан, өнімдеріміздің халал
+                                        стандартына сай болуы - басты қағидамыз!
                                     </p>
                                 </div>
                             </div>
                             <div class="faq-accordion__item">
                                 <button id="faq-accordion__button-1" aria-expanded="false">
-                                    <span class="faq-accordion__title">Дүкендеріңізде еттен бөлек қандай өнімдер сатылады? 
+                                    <span class="faq-accordion__title">Дүкендеріңізде еттен бөлек қандай өнімдер
+                                        сатылады?
                                     </span>
                                     <span class="icon" aria-hidden="true"></span>
                                 </button>
                                 <div class="faq-accordion__content">
                                     <p>
-                                        Еттен бөлек еттен жасалатын жартылай фабрикатталған өнімдер, деликатестер және күнделікті ас үйге қажетті өнімдер бар.
+                                        Еттен бөлек еттен жасалатын жартылай фабрикатталған өнімдер, деликатестер және
+                                        күнделікті ас үйге қажетті өнімдер бар.
                                     </p>
                                 </div>
                             </div>
@@ -125,8 +133,6 @@
 
         </main>
 
-
-        @@include("blocks/footer.html")
 
     </div>
 

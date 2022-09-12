@@ -80,6 +80,10 @@
   .hamburger__menu-logo {
     display: none;
   }
+
+  &__button-mobile {
+    display: none;
+  }
 }
 
 .switch-lang {
@@ -251,6 +255,33 @@
 
     .header__hamburger {
       display: block;
+    }
+  }
+}
+
+@media (max-width: 991.98px) {
+  .nav {
+    &__button {
+      display: none;
+    }
+
+    &__button-mobile {
+      display: block;
+      margin-top: 30px;
+
+      .nav__btn {
+        color: $black-color;
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 577px) {
+  .nav {
+    &__links {
+      width: 100%;
     }
   }
 }
