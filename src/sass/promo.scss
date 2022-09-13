@@ -332,6 +332,14 @@
       }
     }
   }
+
+  .process {
+    &__video {
+      video {
+        height: 250px;
+      }
+    }
+  }
 }
 
 @media (max-width: 577px) {
@@ -355,6 +363,31 @@
   .promo {
     &__title {
       font-size: 56px;
+    }
+
+    &__subtitle {
+      font-size: 26px;
+    }
+  }
+
+  .process {
+    &__video {
+      video {
+        height: 180px;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 360px) {
+  .promo {
+    &__title {
+      font-size: 42px;
+    }
+
+    &__subtitle {
+      font-size: 20px;
     }
   }
 }

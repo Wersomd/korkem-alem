@@ -1,7 +1,7 @@
 @import "base/variables";
 
 .faq {
-  font-family: 'Manrope', sans-serif;
+  font-family: "Manrope", sans-serif;
   &__container {
     margin: 50px 0 40px 0;
     &-title {
@@ -118,10 +118,8 @@
   }
 }
 
-
 @media (max-width: 767.98px) {
   .faq {
-
     &-accordion__title {
       font-size: 16px;
       overflow-wrap: break-word;
