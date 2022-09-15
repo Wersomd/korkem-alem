@@ -31,7 +31,7 @@
 .promo {
   position: relative;
   background: url("../img/hero/promo-bg.png") center top/cover no-repeat;
-  padding-top: 230px;
+  padding-top: calc(100vh / 3);
   height: 100vh;
 
   &__title {

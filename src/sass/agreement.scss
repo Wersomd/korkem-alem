@@ -131,7 +131,7 @@
   .mission {
     margin-top: 120px;
     display: flex;
-    align-items: center;
+    align-items: baseline;
 
     &__left__text {
       font-size: 20px;
@@ -154,13 +154,14 @@
     &__container {
       padding: 70px 0;
       display: flex;
-      align-items: center;
+      align-items: baseline;
       justify-content: space-between;
       color: #fff;
     }
     &-text {
       font-size: 17px;
       line-height: 1.2;
+      width: 450px;
     }
 
     &-info {
@@ -196,12 +197,31 @@
   }
 }
 
+@media (max-width: 1200px) {
+  .agreement {
+    .mission {
+      flex-direction: column;
+      row-gap: 30px;
+
+      &__right__text {
+        line-height: 1.2;
+      }
+    }
+  }
+}
+
 @media (max-width: 992px) {
   .agreement {
     &__text {
       width: 60%;
       padding-top: 65px;
       padding-bottom: 60px;
+    }
+
+    .acceptanceOfLivestock {
+      &__img {
+        margin-top: -80px;
+      }
     }
   }
 }
@@ -211,6 +231,27 @@
     &__text {
       padding-top: 55px;
       padding-bottom: 45px;
+    }
+
+    &__cta__container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      row-gap: 30px;
+    }
+
+    &__cta-info {
+      padding-right: 0;
+      align-items: center;
+    }
+  }
+}
+
+@media (max-width: 790px) {
+  .agreement {
+    &__products {
+      justify-content: center;
+      column-gap: 40px;
     }
   }
 }
@@ -233,6 +274,43 @@
 
     &__img {
       margin-top: 0;
+    }
+
+    .acceptanceOfLivestock {
+      align-items: center;
+      flex-direction: column;
+      margin-top: 40px;
+      row-gap: 30px;
+
+      &__img {
+        margin-top: 0;
+      }
+
+      &__right__block {
+        margin-left: 0;
+      }
+
+    }
+  }
+}
+
+
+@media (max-width: 576px) {
+  .agreement {
+    &__img {
+      height: 100%;
+    }
+    
+    &__cta-text {
+      width: 100%;
+    }
+
+
+    .acceptanceOfLivestock {
+      &__subtitle {
+        max-width: unset;
+        width: 100%;
+      }
     }
   }
 }
