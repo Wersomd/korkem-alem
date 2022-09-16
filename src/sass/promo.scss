@@ -96,6 +96,7 @@
 }
 
 .about {
+  background-color: url('../img/hero/oyu.png') center center/cover no-repeat;
   padding: 60px 0;
 
   &__title {
@@ -364,7 +365,7 @@
   .process {
     &__video {
       video {
-        height: 180px;
+        height: 220px;
       }
     }
   }
@@ -379,6 +380,14 @@
 
     &__subtitle {
       font-size: 20px;
+    }
+  }
+
+  .process {
+    &__video {
+      video {
+        height: 100%;
+      }
     }
   }
 }

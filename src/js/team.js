@@ -8,6 +8,9 @@ const swiper = new Swiper('.team__swiper', {
     },
 
     breakpoints: {
+      0: {
+        slidesPerView: 1,
+      },
       320: {
         slidesPerView: 1,
       },

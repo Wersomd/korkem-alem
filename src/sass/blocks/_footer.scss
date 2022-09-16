@@ -202,13 +202,22 @@
       justify-content: center;
       text-align: center;
 
+      &-address {
+        padding-left: 0;
+      }
+
       &-address::before {
         top: -4px;
         left: 78px;
       }
 
       &-address:first-child::before {
-        left: 126px;
+        left: 86px;
+      }
+
+      &-address:last-child::before {
+        left: 40px;
+        top: -5px;
       }
 
       .mb-24 {
@@ -262,6 +271,10 @@
 
 @media (max-width: 400px) {
   .footer {
+
+    &__bottom {
+      text-align: center;
+    }
     
     &__menu {
       column-gap: 10px;
@@ -280,7 +293,7 @@
 
     &__address {
       &-address:first-child::before {
-        left: 36%;
+        left: 30%;
       } 
     }
     &__menu {

@@ -1,6 +1,7 @@
 @import 'base/variables';
 
 .location {
+    background: url('../img/hero/oyu.png') center center/cover no-repeat;
     &__items {
         margin-top: 40px;
         display: flex;
@@ -18,10 +19,6 @@
         width: 50%;
         height: 500px;
         background-color: #a39d9d;
-    }
-
-    &__address__block {
-        margin-left: 124px;
     }
 
     &__number {
