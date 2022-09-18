@@ -1,16 +1,15 @@
-@import '../base/variables';
+@import "../base/variables";
 
-.page__title-block {
+.page {
+  &__title-block {
     padding-top: 150px;
     text-align: center;
-}
-
-.page__title {
-  font-size: 48px;
-  font-weight: bold;
-}
-
-.page__subtitle {
+  }
+  &__title {
+    font-size: 48px;
+    font-weight: bold;
+  }
+  &__subtitle {
     display: inline-block;
     padding: 5px 20px;
     border: 1px solid $green-color;
@@ -20,12 +19,25 @@
     font-weight: 500;
     line-height: 16px;
     color: $black-color;
+  }
 }
 
 .red__text {
-    color: $red-color;
+  color: $red-color;
 }
 
 .green__text {
-    color: $green-color;
+  color: $green-color;
+}
+
+@media (max-width: 345px) {
+  .page {
+    &__title {
+        font-size: 36px;
+    }
+
+    &__subtitle {
+        font-size: 20px;
+    }
+  }
 }

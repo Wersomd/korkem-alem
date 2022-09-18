@@ -1,5 +1,5 @@
 .footer {
-  padding: 60px 0 48px 0;
+  padding: 60px 0 40px 0;
 
   &__top {
     display: flex;
@@ -194,6 +194,8 @@
 
 @media (max-width: 661px) {
   .footer {
+
+    padding-bottom: 10px;
 
     &__top {
       row-gap: 60px;

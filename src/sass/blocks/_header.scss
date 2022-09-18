@@ -284,6 +284,10 @@
       }
     }
   }
+
+  .switch-lang-wrapper {
+    margin-right: 10px;
+  }
 }
 
 
@@ -291,6 +295,14 @@
   .nav {
     &__links {
       width: 100%;
+    }
+  }
+}
+
+@media (max-width: 280px) {
+  .nav {
+    &__link {
+      font-size: 16px;
     }
   }
 }
