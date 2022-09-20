@@ -90,6 +90,10 @@
 
 @media (max-width: 991.98px) {
   .team {
+    padding-bottom: 60px;
+    &__cta {
+      padding-top: 40px;
+    }
     &__cta__container {
       flex-wrap: wrap;
     }
@@ -126,9 +130,14 @@
 
 @media (max-width: 575.98px) {
   .team {
+    padding-bottom: 40px;
     &__cta-elements {
       width: 100%;
       max-width: unset;
+    }
+    
+    .swiper-wrapper {
+      height: 360px !important;
     }
   }
 }
