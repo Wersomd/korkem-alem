@@ -50,5 +50,11 @@ module.exports = {
         src: pathSrc + "/css/*.css",
         watch: pathSrc + "/css/**/*.css",
         dest: pathDest + "/css"
+    },
+
+    jsonTask: {
+        src: pathSrc + "/*.json",
+        watch: pathSrc + "/**/*.json",
+        dest: pathDest
     }
 }

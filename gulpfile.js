@@ -12,6 +12,7 @@ const img = require('./task/img.js');
 const svg = require('./task/svg');
 const font = require('./task/font.js');
 const withoutCompressionCss = require('./task/withoutCompressionCss.js');
+const jsonTask = require('./task/jsonTask');
 
 
 const server = () => {
@@ -30,12 +31,13 @@ const watcher = () => {
     watch(path.svg.watch, svg).on("all", browserSync.reload)
     watch(path.font.watch, font).on("all", browserSync.reload);
     watch(path.withoutCompressionCss.watch, withoutCompressionCss).on("all", browserSync.reload);
+    watch(path.jsonTask.watch, jsonTask).on("all", browserSync.reload);
 
 }
 
 const build = series(
     clear,
-    parallel(html, scss, js, img, svg, font, withoutCompressionCss)
+    parallel(html, scss, js, img, svg, font, withoutCompressionCss, jsonTask)
 );
 
 const dev = series(
@@ -52,6 +54,7 @@ exports.svg = svg;
 exports.font = font;
 exports.clear = clear;
 exports.withoutCompressionCss = withoutCompressionCss;
+exports.jsonTask = jsonTask;
 
 exports.default = app.isProd
     ? build

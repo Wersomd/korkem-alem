@@ -30,14 +30,23 @@
   color: $green-color;
 }
 
-@media (max-width: 345px) {
+@media (max-width: 576px) {
+  .page {
+    &__subtitle {
+      font-size: 22px;
+    }
+  }
+}
+
+@media (max-width: 360px) {
   .page {
     &__title {
         font-size: 36px;
     }
 
     &__subtitle {
-        font-size: 20px;
+        font-size: 17px;
+        line-height: 1.4;
     }
   }
 }
